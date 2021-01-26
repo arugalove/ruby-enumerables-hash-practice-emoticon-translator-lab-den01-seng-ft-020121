@@ -20,11 +20,6 @@ end
 
 def get_english_meaning(path, emoticon)
   # code goes here
-  load_library(path).each do |key, values|
-    values.each do |lang, emo|
-      if emo == emoticon
-        return key
-      end
-    end
-  end
+  emoji = load_library(path)
+  
 end
